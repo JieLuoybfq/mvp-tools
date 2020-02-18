@@ -22,12 +22,8 @@ QA for shortwave albedo: BRDF_Albedo_Band_Mandatory_Quality_shortwave
 
 EOF
 
-<<<<<<< HEAD
 IDL="/home/apps/harris-5.5.1/envi55/idl87/lib -quiet -e"
 #IDL="/usr/local/exelis/idl85/bin/idl -quiet -e"
-=======
-IDL="/usr/local/exelis/idl85/bin/idl -quiet -e"
->>>>>>> 46c7878bb7ecad7996759607871dac823ae92cef
 
 OPTS=`getopt -o D:I:P: --long product_dir:,product_id:,parameter:,loc:,lat:,lon:,year:,bdoy:,edoy:,output: -n '$(basename ${0})' -- "$@"`
 if [[ $? != 0 ]]; then echo "Failed parsing options" >&2; echo "${USAGE}"; exit 1; fi
