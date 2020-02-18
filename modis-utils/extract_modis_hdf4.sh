@@ -22,7 +22,7 @@ QA for shortwave albedo: BRDF_Albedo_Band_Mandatory_Quality_shortwave
 
 EOF
 
-IDL="/home/apps/harris-5.5.1/envi55/idl87/lib -quiet -e"
+IDL="/home/apps/harris-5.5.1/envi55/idl87/bin/idl -quiet -e"
 #IDL="/usr/local/exelis/idl85/bin/idl -quiet -e"
 
 OPTS=`getopt -o D:I:P: --long product_dir:,product_id:,parameter:,loc:,lat:,lon:,year:,bdoy:,edoy:,output: -n '$(basename ${0})' -- "$@"`
